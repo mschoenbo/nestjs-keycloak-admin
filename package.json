@@ -34,9 +34,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anonrig/nestjs-keycloak-admin"
+    "url": "https://github.com/mschoenbo/nestjs-keycloak-admin"
   },
-  "bugs": "https://github.com/anonrig/nestjs-keycloak-admin",
+  "bugs": "https://github.com/mschoenbo/nestjs-keycloak-admin",
   "peerDependencies": {
     "@nestjs/common": "^8.2.6",
     "@nestjs/core": "^8.2.6",
