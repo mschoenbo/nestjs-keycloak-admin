@@ -1,7 +1,6 @@
 import { Logger, Global } from '@nestjs/common'
 import AdminClient from '@keycloak/keycloak-admin-client'
 import { Client, Issuer, TokenSet } from 'openid-client'
-import { resolve } from 'url'
 import { ResourceManager } from './lib/resource-manager'
 import { PermissionManager } from './lib/permission-manager'
 import { KeycloakModuleOptions } from './@types/package'
@@ -31,7 +30,7 @@ export class KeycloakService {
       throw new Error(`Invalid base url. It should start with either http or https.`)
     }
     this.options = options
-    this.baseUrl = resolve(options.baseUrl, `/realms/${options.realmName}`)
+    this.baseUrl = new URL(`/realms/${options.realmName}`, options.baseUrl).href
 
     const keycloak: any = new KeycloakConnect({}, {
       resource: this.options.clientId,

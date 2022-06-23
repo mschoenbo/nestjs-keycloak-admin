@@ -1,8 +1,8 @@
 {
-  "name": "nestjs-keycloak-admin",
-  "version": "1.8.0",
+  "name": "@mschoenbo/nestjs-keycloak-admin",
+  "version": "1.8.1",
   "description": "Keycloak Admin Provider for Nest.js",
-  "author": "Yagiz Nizipli <yagiz@nizipli.com>",
+  "author": "Matthias Schoenborn",
   "license": "MIT",
   "readmeFilename": "README.md",
   "main": "dist/main/index.js",
@@ -30,7 +30,8 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "latest",
+    "registry": "https://nexus.blockchain-europe.iml.fraunhofer.de/repository/npm-be/"
   },
   "repository": {
     "type": "git",
@@ -62,16 +63,19 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/express": "^4.17.13",
     "@types/node": "17.0.35",
+    "@types/ws": "^8.5.3",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
     "concurrently": "^7.2.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
+    "graphql": "^16.5.0",
     "husky": "^8.0.1",
     "prettier": "2.6.2",
     "rxjs": "^7.5.5",
     "semantic-release": "^19.0.2",
+    "ts-morph": "^15.0.0",
     "typescript": "4.6.4"
   }
 }
